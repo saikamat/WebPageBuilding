@@ -8,8 +8,8 @@
         }
 
         body {
-            background-color: #474e5d;
-            font-family: Helvetica, sans-serif;
+            background-color: #e3f2f3;
+            font-family: "Avenir-light", sans-serif;
         }
 
         /* The actual timeline (the vertical ruler) */
@@ -32,13 +32,13 @@
         }
 
         /* Container around content */
-        .container {
+        .container_work {
             padding: 10px 40px;
             position: relative;
             background-color: inherit;
             width: 50%;
         }
-        .container_1 {
+        .container_edu {
             padding: 10px 40px;
             position: absolute;
             background-color: inherit;
@@ -46,14 +46,14 @@
         }
 
         /* The circles on the timeline */
-        .container::after {
+        .container_work::after {
             content: '';
             position: absolute;
             width: 25px;
             height: 25px;
             right: -17px;
             background-color: white;
-            border: 4px solid #FF9F55;
+            border: 4px solid #479fa4;
             top: 15px;
             border-radius: 50%;
             z-index: 1;
@@ -80,7 +80,7 @@
             right: 30px;
             border: medium solid white;
             border-width: 10px 0 10px 10px;
-            border-color: transparent transparent transparent white;
+            border-color: transparent transparent transparent #5d94ff;
         }
 
         /* Add arrows to the right container (pointing left) */
@@ -94,7 +94,7 @@
             left: 30px;
             border: medium solid white;
             border-width: 10px 10px 10px 0;
-            border-color: transparent white transparent transparent;
+            border-color: transparent #54a809 transparent transparent;
         }
 
         /* Fix the circle for containers on the right side */
@@ -103,9 +103,17 @@
         }
 
         /* The actual content */
-        .content {
+        .content_edu {
             padding: 20px 30px;
-            background-color: white;
+            background-color: #5d94ff;
+            position: relative;
+            border-radius: 6px;
+        }
+
+        /* The actual content */
+        .content_work {
+            padding: 20px 30px;
+            background-color: #54a809;
             position: relative;
             border-radius: 6px;
         }
@@ -118,14 +126,14 @@
             }
 
             /* Full-width containers */
-            .container {
+            .container_work {
                 width: 100%;
                 padding-left: 70px;
                 padding-right: 25px;
             }
 
             /* Make sure that all arrows are pointing leftwards */
-            .container::before {
+            .container_work::before {
                 left: 60px;
                 border: medium solid white;
                 border-width: 10px 10px 10px 0;
@@ -147,38 +155,38 @@
 <body>
 
 <div class="timeline">
-    <div class="container left">
-        <div class="content">
+    <div class="container_work left">
+        <div class="content_edu">
             <h2>2017</h2>
             <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
         </div>
     </div>
-    <div class="container right">
-        <div class="content">
+    <div class="container_work right">
+        <div class="content_edu">
             <h2>2016</h2>
             <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
         </div>
     </div>
-    <div class="container_1 left">
-        <div class="content">
+    <div class="container_edu left">
+        <div class="content_edu">
             <h2>2015</h2>
             <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
         </div>
     </div>
-    <div class="container right">
-        <div class="content">
+    <div class="container_work right">
+        <div class="content_edu">
             <h2>2012</h2>
             <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
         </div>
     </div>
-    <div class="container_1 left">
-        <div class="content">
+    <div class="container_edu left">
+        <div class="content_edu">
             <h2>2011</h2>
             <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
         </div>
     </div>
-    <div class="container right">
-        <div class="content">
+    <div class="container_work right">
+        <div class="content_work">
             <h2>2007</h2>
             <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
         </div>
